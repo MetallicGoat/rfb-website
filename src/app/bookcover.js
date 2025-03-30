@@ -19,7 +19,7 @@ const createParticle = (x, y, width, height) => {
   particle.style.background = color;
 
   // Determine start position and direction
-  const distance = 200;
+  const distance = 140;
   const side = Math.floor(Math.random() * 4);
   let startX, startY, destinationX, destinationY;
 
@@ -60,8 +60,8 @@ const createParticle = (x, y, width, height) => {
       opacity: 0
     }
   ], {
-    duration: Math.random() * 500 + 2000,
-    delay: Math.random() * 200
+    duration: Math.random() * 500 + 1500,
+    delay: 0
   });
 
   animation.onfinish = () => particle.remove();
@@ -84,10 +84,8 @@ export default function BookCover() {
 
     setTimeout(() => {
       interval  = setInterval(() => {
-        for (let i = 0; i < 5; i++) {
-          handlePop();
-        }
-      }, 250);
+        handlePop()
+      }, 100);
     }, 500) // Delay for load in animation
 
     return () => interval.cancel();
@@ -99,7 +97,7 @@ export default function BookCover() {
         src="/RFB_Cover.jpg"
         alt="Sheryl Portrait"
         ref={ref}
-        className="w-6/7 md:3/4 rounded-3xl mx-auto shadow-xl z-100"
+        className="w-6/7 md:3/4 max-w-[400] rounded-3xl mx-auto shadow-xl z-100"
         width={1613}
         height={2400}
         priority

@@ -35,7 +35,7 @@ export default function Content() {
             }}
             className="text-md sm:text-lg lg:text-xl xl:text-2xl font-bold py-2 text-gray-800"
           >
-            Written By Sheryl Azzam
+            Written By <a className="text-sky-600 hover:text-sky-800" target="_blank" href="https://sherylazzam.com">Sheryl Azzam</a>
           </motion.h3>
 
           <motion.p
@@ -77,7 +77,7 @@ export default function Content() {
           >
             {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
             <a
-              className="p-5 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500 hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
+              className="p-5 z-50 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500 hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
               target="_blank"
               href="https://www.indigo.ca/en-ca/red-flags-and-butterflies/9781770868069.html"
             >
@@ -104,7 +104,7 @@ export default function Content() {
       <div className="my-8 flex justify-center md:hidden">
         {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
         <a
-          className="p-5 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500  hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
+          className="p-5 z-50 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500  hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
           target="_blank"
           href="https://www.indigo.ca/en-ca/red-flags-and-butterflies/9781770868069.html"
         >
