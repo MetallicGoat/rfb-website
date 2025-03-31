@@ -38,7 +38,7 @@ export default function RootLayout({children}) {
       {/*CONTENT*/}
       {children}
 
-      <footer className="pt-20 md:pt-0 md:fixed bottom-0 w-full">
+      <footer className="pt-10 md:pt-0 md:fixed bottom-0 w-full">
         <p className="text-lg text-center m-8 md:m-4 md:mx-auto">
           Made with ❤ by the Azzam family
         </p>

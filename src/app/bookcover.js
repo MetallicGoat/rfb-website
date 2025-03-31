@@ -85,8 +85,8 @@ export default function BookCover() {
     setTimeout(() => {
       interval  = setInterval(() => {
         handlePop()
-      }, 100);
-    }, 500) // Delay for load in animation
+      }, 200);
+    }, 250) // Delay for load in animation
 
     return () => interval.cancel();
 
@@ -97,7 +97,7 @@ export default function BookCover() {
         src="/RFB_Cover.jpg"
         alt="Sheryl Portrait"
         ref={ref}
-        className="w-6/7 md:3/4 max-w-[400] rounded-3xl mx-auto shadow-xl z-100"
+        className="w-full md:3/4 max-w-[400] rounded-3xl mx-auto shadow-xl z-100"
         width={1613}
         height={2400}
         priority

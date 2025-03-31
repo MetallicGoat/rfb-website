@@ -7,7 +7,7 @@ export default function Content() {
   return (
     <section className="md:min-h-screen flex flex-col justify-center">
       <div
-        className="md:flex md:flex-row md:justify-between md:items-center md:h-full md:my-auto"
+        className="md:flex md:flex-row md:justify-between md:items-center md:h-full md:my-auto pt-6 md:pt-0"
       >
         <div className="text-center md:w-3/5 md:text-left py-2 md:pb-0">
           <motion.h2
@@ -19,7 +19,7 @@ export default function Content() {
               visible: {opacity: 1, x: 0},
               hidden: {opacity: 0, x: -100},
             }}
-            className="text-3xl sm:text-4xl xl:text-5xl py-2 font-extrabold "
+            className="text-4xl xl:text-5xl py-2 font-extrabold "
           >
             Red Flags and Butterflies
           </motion.h2>
@@ -33,7 +33,7 @@ export default function Content() {
               visible: {opacity: 1, x: 0},
               hidden: {opacity: 0, x: -100},
             }}
-            className="text-md sm:text-lg lg:text-xl xl:text-2xl font-bold py-2 text-gray-800"
+            className="text-2xl font-bold py-2 text-gray-800"
           >
             Written By <a className="text-sky-600 hover:text-sky-800" target="_blank" href="https://sherylazzam.com">Sheryl Azzam</a>
           </motion.h3>
@@ -49,7 +49,7 @@ export default function Content() {
             }}
 
             // bg-gradient-to-b from-sky-300 to-sky-600 p-10 rounded-2xl
-            className=" sm:text-lg xl:text-xl text-gray-800 w-full md:max-w-full md:pr-10 md:mx-0 "
+            className="text-md sm:text-lg md:text-xl text-gray-800 w-full max-w-[600] mx-auto md:max-w-full md:pr-10 md:mx-0 "
           >
             Straight A student, swim team star, talented painter — tenth-grader Lexie has worked hard to become the
             perfect applicant for Sunridge High’s prestigious fine art program. She’s even got a shot at a swimming
