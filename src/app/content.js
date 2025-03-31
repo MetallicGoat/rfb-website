@@ -2,6 +2,7 @@
 
 import {motion} from "motion/react";
 import BookCover from "@/app/bookcover";
+import { FaLink } from "react-icons/fa6";
 
 export default function Content() {
   return (
@@ -33,9 +34,9 @@ export default function Content() {
               visible: {opacity: 1, x: 0},
               hidden: {opacity: 0, x: -100},
             }}
-            className="text-2xl font-bold py-2 text-gray-800"
+            className="text-xl sm:text-xl font-bold py-2 text-gray-800"
           >
-            Written By <a className="text-sky-600 hover:text-sky-800" target="_blank" href="https://sherylazzam.com">Sheryl Azzam</a>
+            Written By <a className="text-sky-600 hover:text-sky-800 hover:underline inline" target="_blank" href="https://sherylazzam.com">Sheryl Azzam <FaLink className="inline"/></a>
           </motion.h3>
 
           <motion.p
