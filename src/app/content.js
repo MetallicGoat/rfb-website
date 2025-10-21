@@ -2,7 +2,7 @@
 
 import {motion} from "motion/react";
 import BookCover from "@/app/bookcover";
-import { FaLink } from "react-icons/fa6";
+import { FaLink, FaMagnifyingGlass } from "react-icons/fa6";
 
 export default function Content() {
   return (
@@ -78,11 +78,11 @@ export default function Content() {
           >
             {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
             <a
-              className="p-5 z-50 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500 hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
+              className="p-5 z-50 font-bold text-2xl bg-gradient-to-b from-sky-300 to-sky-500 hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
               target="_blank"
-              href="https://www.indigo.ca/en-ca/red-flags-and-butterflies/9781770868069.html"
+              href="https://www.google.ca/books/edition/Red_Flags_and_Butterflies/e78t0QEACAAJ?kptab=getbook"
             >
-              Pre-Order
+              Find <FaMagnifyingGlass className="inline"/>
             </a>
           </motion.div>
         </div>
@@ -105,11 +105,11 @@ export default function Content() {
       <div className="my-8 flex justify-center md:hidden">
         {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
         <a
-          className="p-5 z-50 font-bold text-xl bg-gradient-to-b from-sky-300 to-sky-500  hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
+          className="p-5 z-50 font-bold text-2xl bg-gradient-to-b from-sky-300 to-sky-500 hover:from-sky-400 hover:to-sky-600 transition duration-150 rounded-2xl"
           target="_blank"
-          href="https://www.indigo.ca/en-ca/red-flags-and-butterflies/9781770868069.html"
+          href="https://www.google.ca/books/edition/Red_Flags_and_Butterflies/e78t0QEACAAJ?kptab=getbook"
         >
-          Pre-Order
+          Find <FaMagnifyingGlass className="inline"/>
         </a>
       </div>
     </section>
