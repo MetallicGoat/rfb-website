@@ -139,7 +139,7 @@ export default function Content() {
           className="mx-auto rounded-2xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2"
         />
 
-        <p className="mt-3 text-xl mx-auto text-center sm:max-w-3/4 md:max-w-2/3 lg:max-w-1/2">Thanks to Lee Academy for hosting the book launch, and to eveberyone who came to celebrate the launch with us! (October 22nd 2025)</p>
+        <p className="mt-3 text-xl mx-auto text-center sm:max-w-3/4 md:max-w-2/3 lg:max-w-1/2">Thanks to Lee Academy for hosting the book launch, and to everyone who came to celebrate the launch with us! (October 22nd 2025)</p>
       </motion.section>
 
     </>
