@@ -4,6 +4,7 @@ import {motion} from "motion/react";
 import BookCover from "@/app/bookcover";
 import ArticleCard from "@/app/articlecard";
 import { FaArrowRight, FaLink } from "react-icons/fa";
+import Image from "next/image";
 
 const articles = [
   {
@@ -72,7 +73,7 @@ export default function Content() {
               being who her dad wants her to be, and being true to herself.
             </p>
 
-            <div className="mt-5">
+            <div className="mt-5 mb-8 mb:0">
               <a className="text-2xl text-sky-600 hover:text-sky-800 hover:underline inline" target="_blank" href="https://www.google.ca/books/edition/Red_Flags_and_Butterflies/e78t0QEACAAJ?kptab=getbook">
                 Find on Google Books <FaArrowRight className="inline"/>
               </a>
@@ -105,8 +106,8 @@ export default function Content() {
           visible: {opacity: 1, y: 0},
           hidden: {opacity: 0, y: 100},
         }}
-        className="max-w-8xl mx-auto pt-10">
-        <h2 className="mt-12 md:mt-0 text-4xl text-center font-bold text-gray-900 mb-8">In the News</h2>
+        className="max-w-8xl mx-auto">
+        <h2 className="mt-22 md:mt-10 text-4xl text-center font-bold text-gray-900 mb-4">In the News</h2>
 
         <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between items-center gap-8">
           {articles.map((article, index) => (
@@ -116,6 +117,31 @@ export default function Content() {
           ))}
         </div>
       </motion.section>
+
+
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+        transition={{delay: 0.1, duration: 0.4}}
+        variants={{
+          visible: {opacity: 1, y: 0},
+          hidden: {opacity: 0, y: 100},
+        }}
+        className="w-full mx-auto">
+        <h2 className="mt-22 md:mt-15 text-4xl text-center font-bold text-gray-900 mb-4">Book Launch</h2>
+
+        <Image
+          src={"/BookLaunch.jpg"}
+          alt={"Everyone at the Book Launch!"}
+          width={2016}
+          height={1512}
+          className="mx-auto rounded-2xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2"
+        />
+
+        <p className="mt-3 text-xl mx-auto text-center sm:max-w-3/4 md:max-w-2/3 lg:max-w-1/2">Thanks to Lee Academy for hosting the book launch, and to eveberyone who came to celebrate the launch with us! (October 22nd 2025)</p>
+      </motion.section>
+
     </>
   );
 }
