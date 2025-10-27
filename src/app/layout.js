@@ -1,16 +1,13 @@
 import Image from "next/image"
-import {Geist, Geist_Mono} from "next/font/google";
+import {Crimson_Pro, Merriweather} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const crimsonPro = Crimson_Pro({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-crimson-pro',
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Red Flags and Butterflies",
@@ -19,10 +16,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
+    <html lang="en" className={crimsonPro.className}>
+    <body className="antialiased">
 
     <Image
       src="/Texture.jpg"
@@ -38,8 +33,8 @@ export default function RootLayout({children}) {
       {/*CONTENT*/}
       {children}
 
-      <footer className="pt-10 md:pt-0 md:fixed bottom-0 w-full">
-        <p className="text-lg text-center m-8 md:m-4 md:mx-auto">
+      <footer className="pt-20">
+        <p className="text-lg text-center m-8">
           Made with ❤ by the Azzam family
         </p>
       </footer>
